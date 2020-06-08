@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4601B2B1243F0ACD003731D0 /* PlayerWinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601B2B0243F0ACD003731D0 /* PlayerWinViewController.swift */; };
+		4601B2B3243F2FDF003731D0 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601B2B2243F2FDF003731D0 /* RulesViewController.swift */; };
+		4601B2B6243F5578003731D0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601B2B5243F5578003731D0 /* SoundManager.swift */; };
+		4601B2B8243F5756003731D0 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601B2B7243F5756003731D0 /* DBManager.swift */; };
+		46020C402440588600496276 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46020C3F2440588600496276 /* ScoreViewController.swift */; };
+		46020C4324405BA700496276 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46020C4224405BA700496276 /* ScoreTableViewCell.swift */; };
+		46184FFC24408EFF002D4904 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46184FF924408EFF002D4904 /* CustomTextField.swift */; };
+		46184FFD24408EFF002D4904 /* AdaptiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46184FFA24408EFF002D4904 /* AdaptiveButton.swift */; };
+		46184FFE24408EFF002D4904 /* AdaptiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46184FFB24408EFF002D4904 /* AdaptiveLabel.swift */; };
+		461850002440A1F3002D4904 /* myGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46184FFF2440A1F3002D4904 /* myGame.swift */; };
+		46FFE219243DD2DB0066A0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE218243DD2DB0066A0D1 /* AppDelegate.swift */; };
+		46FFE21B243DD2DB0066A0D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE21A243DD2DB0066A0D1 /* SceneDelegate.swift */; };
+		46FFE21D243DD2DB0066A0D1 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE21C243DD2DB0066A0D1 /* StartScreen.swift */; };
+		46FFE220243DD2DB0066A0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FFE21E243DD2DB0066A0D1 /* Main.storyboard */; };
+		46FFE222243DD2DC0066A0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FFE221243DD2DC0066A0D1 /* Assets.xcassets */; };
+		46FFE225243DD2DC0066A0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FFE223243DD2DC0066A0D1 /* LaunchScreen.storyboard */; };
+		46FFE22D243DE99C0066A0D1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE22C243DE99C0066A0D1 /* GameViewController.swift */; };
+		46FFE22F243DF4880066A0D1 /* PlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE22E243DF4880066A0D1 /* PlayerNameViewController.swift */; };
+		46FFE238243DF8800066A0D1 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46FFE234243DF8800066A0D1 /* dingcorrect.wav */; };
+		46FFE239243DF8800066A0D1 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46FFE235243DF8800066A0D1 /* cardflip.wav */; };
+		46FFE23A243DF8800066A0D1 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46FFE236243DF8800066A0D1 /* dingwrong.wav */; };
+		46FFE23B243DF8800066A0D1 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46FFE237243DF8800066A0D1 /* shuffle.wav */; };
+		46FFE23D243E02E30066A0D1 /* PlayerTossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE23C243E02E30066A0D1 /* PlayerTossViewController.swift */; };
+		46FFE244243E0EB40066A0D1 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE241243E0EB40066A0D1 /* CardModel.swift */; };
+		46FFE245243E0EB40066A0D1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE242243E0EB40066A0D1 /* Game.swift */; };
+		46FFE246243E0EB40066A0D1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFE243243E0EB40066A0D1 /* Card.swift */; };
+		82A6BFAD053C8110754741CB /* Pods_BetBig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C2CE8A0CDCFF6B7B4B28A6 /* Pods_BetBig.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4601B2B0243F0ACD003731D0 /* PlayerWinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWinViewController.swift; sourceTree = "<group>"; };
+		4601B2B2243F2FDF003731D0 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		4601B2B5243F5578003731D0 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		4601B2B7243F5756003731D0 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		46020C3F2440588600496276 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		46020C4224405BA700496276 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		46184FF924408EFF002D4904 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		46184FFA24408EFF002D4904 /* AdaptiveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveButton.swift; sourceTree = "<group>"; };
+		46184FFB24408EFF002D4904 /* AdaptiveLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveLabel.swift; sourceTree = "<group>"; };
+		46184FFF2440A1F3002D4904 /* myGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myGame.swift; sourceTree = "<group>"; };
+		46FFE215243DD2DB0066A0D1 /* BetBig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetBig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FFE218243DD2DB0066A0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46FFE21A243DD2DB0066A0D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46FFE21C243DD2DB0066A0D1 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		46FFE21F243DD2DB0066A0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46FFE221243DD2DC0066A0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46FFE224243DD2DC0066A0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46FFE226243DD2DC0066A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FFE22C243DE99C0066A0D1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		46FFE22E243DF4880066A0D1 /* PlayerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNameViewController.swift; sourceTree = "<group>"; };
+		46FFE234243DF8800066A0D1 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		46FFE235243DF8800066A0D1 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		46FFE236243DF8800066A0D1 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		46FFE237243DF8800066A0D1 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		46FFE23C243E02E30066A0D1 /* PlayerTossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTossViewController.swift; sourceTree = "<group>"; };
+		46FFE241243E0EB40066A0D1 /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		46FFE242243E0EB40066A0D1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		46FFE243243E0EB40066A0D1 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9B025494E05218C13F22CD5F /* Pods-BetBig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetBig.release.xcconfig"; path = "Target Support Files/Pods-BetBig/Pods-BetBig.release.xcconfig"; sourceTree = "<group>"; };
+		D8C2CE8A0CDCFF6B7B4B28A6 /* Pods_BetBig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetBig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90D9C46EC08793AD9E70820 /* Pods-BetBig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetBig.debug.xcconfig"; path = "Target Support Files/Pods-BetBig/Pods-BetBig.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46FFE212243DD2DB0066A0D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A6BFAD053C8110754741CB /* Pods_BetBig.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4601B2B4243F5569003731D0 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				4601B2B5243F5578003731D0 /* SoundManager.swift */,
+				4601B2B7243F5756003731D0 /* DBManager.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		46020C4124405B8400496276 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				46020C4224405BA700496276 /* ScoreTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		46184FF824408EE0002D4904 /* ReusableClass */ = {
+			isa = PBXGroup;
+			children = (
+				46184FFA24408EFF002D4904 /* AdaptiveButton.swift */,
+				46184FFB24408EFF002D4904 /* AdaptiveLabel.swift */,
+				46184FF924408EFF002D4904 /* CustomTextField.swift */,
+			);
+			path = ReusableClass;
+			sourceTree = "<group>";
+		};
+		46FFE20C243DD2DB0066A0D1 = {
+			isa = PBXGroup;
+			children = (
+				46FFE217243DD2DB0066A0D1 /* BetBig */,
+				46FFE216243DD2DB0066A0D1 /* Products */,
+				4F8783E1DE12DDA240130047 /* Pods */,
+				8727C41234117F758C1F7288 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46FFE216243DD2DB0066A0D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46FFE215243DD2DB0066A0D1 /* BetBig.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46FFE217243DD2DB0066A0D1 /* BetBig */ = {
+			isa = PBXGroup;
+			children = (
+				46FFE240243E0E930066A0D1 /* MyModel */,
+				4601B2B4243F5569003731D0 /* core */,
+				46FFE230243DF7FA0066A0D1 /* View */,
+				46FFE233243DF84E0066A0D1 /* Sounds */,
+				46184FF824408EE0002D4904 /* ReusableClass */,
+				46FFE218243DD2DB0066A0D1 /* AppDelegate.swift */,
+				46FFE21A243DD2DB0066A0D1 /* SceneDelegate.swift */,
+				46FFE21E243DD2DB0066A0D1 /* Main.storyboard */,
+				46FFE221243DD2DC0066A0D1 /* Assets.xcassets */,
+				46FFE223243DD2DC0066A0D1 /* LaunchScreen.storyboard */,
+				46FFE226243DD2DC0066A0D1 /* Info.plist */,
+			);
+			path = BetBig;
+			sourceTree = "<group>";
+		};
+		46FFE230243DF7FA0066A0D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46020C4124405B8400496276 /* Cell */,
+				46FFE232243DF82F0066A0D1 /* ViewController */,
+				46FFE231243DF8090066A0D1 /* PopUpAlerts */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46FFE231243DF8090066A0D1 /* PopUpAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				46FFE22E243DF4880066A0D1 /* PlayerNameViewController.swift */,
+				46FFE23C243E02E30066A0D1 /* PlayerTossViewController.swift */,
+				4601B2B0243F0ACD003731D0 /* PlayerWinViewController.swift */,
+			);
+			path = PopUpAlerts;
+			sourceTree = "<group>";
+		};
+		46FFE232243DF82F0066A0D1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46FFE21C243DD2DB0066A0D1 /* StartScreen.swift */,
+				46FFE22C243DE99C0066A0D1 /* GameViewController.swift */,
+				4601B2B2243F2FDF003731D0 /* RulesViewController.swift */,
+				46020C3F2440588600496276 /* ScoreViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		46FFE233243DF84E0066A0D1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				46FFE235243DF8800066A0D1 /* cardflip.wav */,
+				46FFE234243DF8800066A0D1 /* dingcorrect.wav */,
+				46FFE236243DF8800066A0D1 /* dingwrong.wav */,
+				46FFE237243DF8800066A0D1 /* shuffle.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		46FFE240243E0E930066A0D1 /* MyModel */ = {
+			isa = PBXGroup;
+			children = (
+				46FFE243243E0EB40066A0D1 /* Card.swift */,
+				46FFE241243E0EB40066A0D1 /* CardModel.swift */,
+				46FFE242243E0EB40066A0D1 /* Game.swift */,
+				46184FFF2440A1F3002D4904 /* myGame.swift */,
+			);
+			path = MyModel;
+			sourceTree = "<group>";
+		};
+		4F8783E1DE12DDA240130047 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D90D9C46EC08793AD9E70820 /* Pods-BetBig.debug.xcconfig */,
+				9B025494E05218C13F22CD5F /* Pods-BetBig.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8727C41234117F758C1F7288 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C2CE8A0CDCFF6B7B4B28A6 /* Pods_BetBig.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46FFE214243DD2DB0066A0D1 /* BetBig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46FFE229243DD2DC0066A0D1 /* Build configuration list for PBXNativeTarget "BetBig" */;
+			buildPhases = (
+				D0D393E54E3F0F4C6E31710D /* [CP] Check Pods Manifest.lock */,
+				46FFE211243DD2DB0066A0D1 /* Sources */,
+				46FFE212243DD2DB0066A0D1 /* Frameworks */,
+				46FFE213243DD2DB0066A0D1 /* Resources */,
+				3ED1E7BF05BE05C5E740D953 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetBig;
+			productName = BetBig;
+			productReference = 46FFE215243DD2DB0066A0D1 /* BetBig.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46FFE20D243DD2DB0066A0D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = com.Zohaib_Developer;
+				TargetAttributes = {
+					46FFE214243DD2DB0066A0D1 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 46FFE210243DD2DB0066A0D1 /* Build configuration list for PBXProject "BetBig" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46FFE20C243DD2DB0066A0D1;
+			productRefGroup = 46FFE216243DD2DB0066A0D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46FFE214243DD2DB0066A0D1 /* BetBig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46FFE213243DD2DB0066A0D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FFE225243DD2DC0066A0D1 /* LaunchScreen.storyboard in Resources */,
+				46FFE222243DD2DC0066A0D1 /* Assets.xcassets in Resources */,
+				46FFE23A243DF8800066A0D1 /* dingwrong.wav in Resources */,
+				46FFE23B243DF8800066A0D1 /* shuffle.wav in Resources */,
+				46FFE220243DD2DB0066A0D1 /* Main.storyboard in Resources */,
+				46FFE238243DF8800066A0D1 /* dingcorrect.wav in Resources */,
+				46FFE239243DF8800066A0D1 /* cardflip.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ED1E7BF05BE05C5E740D953 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BetBig/Pods-BetBig-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BetBig/Pods-BetBig-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BetBig/Pods-BetBig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D393E54E3F0F4C6E31710D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetBig-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46FFE211243DD2DB0066A0D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FFE22D243DE99C0066A0D1 /* GameViewController.swift in Sources */,
+				461850002440A1F3002D4904 /* myGame.swift in Sources */,
+				46FFE246243E0EB40066A0D1 /* Card.swift in Sources */,
+				4601B2B1243F0ACD003731D0 /* PlayerWinViewController.swift in Sources */,
+				4601B2B8243F5756003731D0 /* DBManager.swift in Sources */,
+				46184FFD24408EFF002D4904 /* AdaptiveButton.swift in Sources */,
+				46184FFC24408EFF002D4904 /* CustomTextField.swift in Sources */,
+				46FFE21D243DD2DB0066A0D1 /* StartScreen.swift in Sources */,
+				46FFE23D243E02E30066A0D1 /* PlayerTossViewController.swift in Sources */,
+				4601B2B6243F5578003731D0 /* SoundManager.swift in Sources */,
+				46020C402440588600496276 /* ScoreViewController.swift in Sources */,
+				46184FFE24408EFF002D4904 /* AdaptiveLabel.swift in Sources */,
+				46FFE244243E0EB40066A0D1 /* CardModel.swift in Sources */,
+				46FFE219243DD2DB0066A0D1 /* AppDelegate.swift in Sources */,
+				46020C4324405BA700496276 /* ScoreTableViewCell.swift in Sources */,
+				46FFE21B243DD2DB0066A0D1 /* SceneDelegate.swift in Sources */,
+				46FFE22F243DF4880066A0D1 /* PlayerNameViewController.swift in Sources */,
+				4601B2B3243F2FDF003731D0 /* RulesViewController.swift in Sources */,
+				46FFE245243E0EB40066A0D1 /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46FFE21E243DD2DB0066A0D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FFE21F243DD2DB0066A0D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46FFE223243DD2DC0066A0D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FFE224243DD2DC0066A0D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46FFE227243DD2DC0066A0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46FFE228243DD2DC0066A0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46FFE22A243DD2DC0066A0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90D9C46EC08793AD9E70820 /* Pods-BetBig.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8XS8CDH7L;
+				INFOPLIST_FILE = BetBig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zohaib-Developer.BetBig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46FFE22B243DD2DC0066A0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B025494E05218C13F22CD5F /* Pods-BetBig.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8XS8CDH7L;
+				INFOPLIST_FILE = BetBig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zohaib-Developer.BetBig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46FFE210243DD2DB0066A0D1 /* Build configuration list for PBXProject "BetBig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FFE227243DD2DC0066A0D1 /* Debug */,
+				46FFE228243DD2DC0066A0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46FFE229243DD2DC0066A0D1 /* Build configuration list for PBXNativeTarget "BetBig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FFE22A243DD2DC0066A0D1 /* Debug */,
+				46FFE22B243DD2DC0066A0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46FFE20D243DD2DB0066A0D1 /* Project object */;
+}
